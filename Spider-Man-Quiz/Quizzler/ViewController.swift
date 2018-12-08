@@ -29,7 +29,8 @@ class ViewController: UIViewController {
     }
     //TODO Add a start menu RH:2018-11-25
 
-    @IBAction func answerPressed(_ sender: AnyObject) {
+    @IBAction func answerPressed(_ sender: AnyObject)
+    {
         if sender.tag == 1 {
             pickedAnswer = true
         }
@@ -38,20 +39,31 @@ class ViewController: UIViewController {
         }
         checkAnswer()
         questionNumber += 1
-        nextQuestion()
-        
   
     }
     
+    @IBAction func exitGame(_ sender: Any) {
+        let alert = UIAlertController(title: "Are you sure you wish to Quit?", message: "", preferredStyle: .alert)
+        
+        let restartAction = UIAlertAction(title: "Yes", style: .default, handler:
+        { (UIAlertAction) in
+            self.startOver()
+        })
+        alert.addAction(restartAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
     
-    func updateUI() {
+    func updateUI()
+    {
         scoreLabel.text = "Score: \(score)"
         progressLabel.text = "\(questionNumber + 1)/ \(numberOfQuestions + 1)"
       
     }
     
 
-    func nextQuestion() {
+    func nextQuestion()
+    {
         
         if questionNumber <= numberOfQuestions {
              questionLabel.text = allQuestions.list[questionNumber].QuestionText
@@ -74,7 +86,8 @@ class ViewController: UIViewController {
     }
     
     
-    func checkAnswer() {
+    func checkAnswer()
+    {
         let answerResponse = allQuestions.list[questionNumber].answer
         let difficultyLevel = allQuestions.list[questionNumber].difficulty
         //--- Easy
@@ -112,10 +125,12 @@ class ViewController: UIViewController {
         })
         alert.addAction(showAnswerAction)
         present(alert, animated: true, completion: nil)
+        updateUI()
         
     }
     
-    func startOver() {
+    func startOver()
+    {
        questionNumber = 0
         score = 0
         nextQuestion()
