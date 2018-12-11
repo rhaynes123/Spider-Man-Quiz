@@ -50,9 +50,8 @@ class ViewController: UIViewController {
             self.startOver()
         })
         alert.addAction(restartAction)
-        
-        present(alert, animated: true, completion: nil)
-    }
+        present(alert,     animated: true, completion: nil)
+    } 
     
     func updateUI()
     {
@@ -79,7 +78,6 @@ class ViewController: UIViewController {
                 self.startOver()
             })
             alert.addAction(restartAction)
-            
             present(alert, animated: true, completion: nil)
         }
        
