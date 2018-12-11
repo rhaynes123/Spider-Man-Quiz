@@ -15,11 +15,10 @@ class ViewController: UIViewController {
     var pickedAnswer : Bool = false
     var questionNumber : Int = 0
     var score: Int = 0
-    let numberOfQuestions: Int = 21 //TODO Make questionNumber dynamic currently it's a hard coded number of Questions starting from 0
+    lazy var numberOfQuestions: Int = allQuestions.list.count
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    //@IBOutlet var progressBar: UIView!
     @IBOutlet weak var progressLabel: UILabel!
     
     override func viewDidLoad() {
@@ -28,7 +27,6 @@ class ViewController: UIViewController {
         
     }
     //TODO Add a start menu RH:2018-11-25
-
     @IBAction func answerPressed(_ sender: AnyObject)
     {
         if sender.tag == 1 {
@@ -69,8 +67,7 @@ class ViewController: UIViewController {
             updateUI()
         }
         else {
-            //TODO RH: Need to dismiss previous view from displayCorrectAnswer: 2018-12-1
-            //TODO this score appears to updating correctly but this occures before the UI updates at the bottom
+            
             let alert = UIAlertController(title: "You've Finished", message: "Total Score: \(score)", preferredStyle: .alert)
             
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler:
@@ -109,7 +106,7 @@ class ViewController: UIViewController {
         }
         
     }
-    //RH TODO make this a function
+    
     func displayCorrectAnswer(displayAnswer: String)
     {
         print(displayAnswer)

@@ -14,8 +14,6 @@ class QuestionBank
     init()
     {
         // Creating a quiz item and appending it to the list
-        //TODO numberOfQuestions in ViewController must be changed manually currently as of 2018-12-1 to reflect total question numbers
-        //TODO give correct answers 2018-12-1
         //1st Question
         list.append(Question(text: "Spider-Man 1st appeared in Amazing Fantasy 15.", answerResponse: true, theCorrectAnswer: "Spider-Man did originally appear in Amazing Fantasy #15.", difficultyLevel: "Easy"))
         //2nd Question
@@ -60,6 +58,16 @@ class QuestionBank
         list.append(Question(text: "Spider-Man's webbing is one of his super powers.", answerResponse: false, theCorrectAnswer: "Spider-Man built mechanical web shooters to make webs. ", difficultyLevel: "Easy"))
         //22nd Question
         list.append(Question(text: "FireStar was created for the TV show Spider-Man and his Amazing Friends.", answerResponse: true, theCorrectAnswer: "Firestar didn't exist until the Spider-Man and his Amazing Friends TV show. ", difficultyLevel: "Hard"))
+        //23nd Question
+        list.append(Question(text: "OverDrive is both a fan of Spider-Man and a supervillain.", answerResponse: true, theCorrectAnswer: "OverDrive is a big Spider-Man fan.", difficultyLevel: "Hard"))
+        //24nd Question
+        list.append(Question(text: "Green Goblin originally rode a rocket Broom Stick.", answerResponse: true, theCorrectAnswer: "Green Goblin debuyed riding of rocket Broom Stick.", difficultyLevel: "Hard"))
+        //25nd Question
+        list.append(Question(text: "Peter Parker spent time working as a high school Science Teacher.", answerResponse: true, theCorrectAnswer: "During the mi 2000s Spider-Man taught science at Mid-Town High.", difficultyLevel: "Hard"))
+        //26th Question
+        list.append(Question(text: "Spider-Man worked as a photographer for the Daily Planet.", answerResponse: false, theCorrectAnswer: "He worked at the Daily Bugle.", difficultyLevel: "Easy"))
+        
+        
         
         
     }
