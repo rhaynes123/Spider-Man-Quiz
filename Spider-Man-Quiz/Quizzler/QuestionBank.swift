@@ -58,14 +58,22 @@ class QuestionBank
         list.append(Question(text: "Spider-Man's webbing is one of his super powers.", answerResponse: false, theCorrectAnswer: "Spider-Man built mechanical web shooters to make webs. ", difficultyLevel: "Easy"))
         //22nd Question
         list.append(Question(text: "FireStar was created for the TV show Spider-Man and his Amazing Friends.", answerResponse: true, theCorrectAnswer: "Firestar didn't exist until the Spider-Man and his Amazing Friends TV show. ", difficultyLevel: "Hard"))
-        //23nd Question
+        //23rd Question
         list.append(Question(text: "OverDrive is both a fan of Spider-Man and a supervillain.", answerResponse: true, theCorrectAnswer: "OverDrive is a big Spider-Man fan.", difficultyLevel: "Hard"))
-        //24nd Question
+        //24th Question
         list.append(Question(text: "Green Goblin originally rode a rocket Broom Stick.", answerResponse: true, theCorrectAnswer: "Green Goblin debuyed riding of rocket Broom Stick.", difficultyLevel: "Hard"))
-        //25nd Question
+        //25th Question
         list.append(Question(text: "Peter Parker spent time working as a high school Science Teacher.", answerResponse: true, theCorrectAnswer: "During the mi 2000s Spider-Man taught science at Mid-Town High.", difficultyLevel: "Hard"))
         //26th Question
         list.append(Question(text: "Spider-Man worked as a photographer for the Daily Planet.", answerResponse: false, theCorrectAnswer: "He worked at the Daily Bugle.", difficultyLevel: "Easy"))
+        //27th Question
+        list.append(Question(text: "Spider-Man needs his suit to wall crawl.", answerResponse: false, theCorrectAnswer: "Wall crawling is one of his natural powers.", difficultyLevel: "Easy"))
+        //28th Question
+        list.append(Question(text: "Spider-Man lives in New York City.", answerResponse: true, theCorrectAnswer: "Peter Parker indeed lives in New York City.", difficultyLevel: "Easy"))
+        //29th Question
+        list.append(Question(text: "Spider-Man's Uncle is named Richard.", answerResponse: false, theCorrectAnswer: "Peter Parker's famous uncle is named Ben.", difficultyLevel: "Easy"))
+        //30th Question
+        list.append(Question(text: "Spider-Man can talk to actual spiders.", answerResponse: false, theCorrectAnswer: "There was a time when this was true but Spider-Man quickly loss that power.", difficultyLevel: "Easy"))
         
         
         
