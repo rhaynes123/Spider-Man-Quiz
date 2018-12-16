@@ -62,11 +62,11 @@ class ViewController: UIViewController {
     func nextQuestion()
     {
         
-        if questionNumber <= numberOfQuestions {
+        if questionNumber < numberOfQuestions {
              questionLabel.text = allQuestions.list[questionNumber].QuestionText
             updateUI()
         }
-        else {
+        else  {
             
             let alert = UIAlertController(title: "You've Finished", message: "Total Score: \(score)", preferredStyle: .alert)
             
