@@ -28,7 +28,7 @@
                                 <rect key="frame" x="97" y="244" width="181" height="92"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="🕸 Play Game 🕸">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="PlayGameButtonPressed:" destination="ErQ-pH-fhw" eventType="touchUpInside" id="4IU-n2-AHW"/>

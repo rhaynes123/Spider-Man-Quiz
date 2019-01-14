@@ -29,7 +29,7 @@ class IntroViewController: UIViewController {
     }
     func colorButton()
     {
-        PlayGameButton.backgroundColor = UIColor.black
+        PlayGameButton.backgroundColor = UIColor.white
         PlayGameButton.layer.cornerRadius = PlayGameButton.frame.height/2
         PlayGameButton.layer.shadowRadius = 4
     }
