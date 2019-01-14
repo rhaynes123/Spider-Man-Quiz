@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5569F69E21AA1ED100F45C0C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69D21AA1ED100F45C0C /* Question.swift */; };
 		5569F6A021AA24FF00F45C0C /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69F21AA24FF00F45C0C /* QuestionBank.swift */; };
+		55F6D26121D972DC00FDB789 /* _spiderman-thwip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */; };
+		55F6D27D21EBE0B800FDB789 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */; };
+		55F6D27F21EC078900FDB789 /* Spiderman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F6D27E21EC078800FDB789 /* Spiderman.wav */; };
 		633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646BE1B8C657400FF45E2 /* AppDelegate.swift */; };
 		633646C11B8C657400FF45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646C01B8C657400FF45E2 /* ViewController.swift */; };
 		633646C61B8C657400FF45E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633646C51B8C657400FF45E2 /* Images.xcassets */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		5569F69D21AA1ED100F45C0C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5569F69F21AA24FF00F45C0C /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "_spiderman-thwip.wav"; path = "../../../../../../Downloads/_spiderman-thwip.wav"; sourceTree = "<group>"; };
+		55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		55F6D27E21EC078800FDB789 /* Spiderman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Spiderman.wav; path = ../../../../../../Downloads/Spiderman.wav; sourceTree = "<group>"; };
 		633646B91B8C657400FF45E2 /* Spider-Man Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spider-Man Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633646BD1B8C657400FF45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633646BE1B8C657400FF45E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55F6D25F21D9720800FDB789 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				55F6D27E21EC078800FDB789 /* Spiderman.wav */,
+				55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		633646B01B8C657400FF45E2 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55F6D25F21D9720800FDB789 /* Sounds */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
 			);
@@ -98,6 +114,7 @@
 			children = (
 				633646BE1B8C657400FF45E2 /* AppDelegate.swift */,
 				633646C01B8C657400FF45E2 /* ViewController.swift */,
+				55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -162,8 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F6D26121D972DC00FDB789 /* _spiderman-thwip.wav in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
+				55F6D27F21EC078900FDB789 /* Spiderman.wav in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F6D27D21EBE0B800FDB789 /* IntroViewController.swift in Sources */,
 				5569F69E21AA1ED100F45C0C /* Question.swift in Sources */,
 				5569F6A021AA24FF00F45C0C /* QuestionBank.swift in Sources */,
 				633646C11B8C657400FF45E2 /* ViewController.swift in Sources */,

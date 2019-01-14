@@ -1,12 +1,12 @@
 //
 //  ViewController.swift
-//  Spider-Man Quiz
+//  Star Wars Quiz
 //
 //  Created by Richard Haynes  on 2018-11-25.
 //
 
 import UIKit
-
+import AVFoundation
 class ViewController: UIViewController {
     
     //Place your instance variables here
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var questionNumber : Int = 0
     var score: Int = 0
     lazy var numberOfQuestions: Int = allQuestions.list.count
+    var audioPlayer: AVAudioPlayer?
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       nextQuestion()
+        nextQuestion()
         
     }
     //TODO Add a start menu RH:2018-11-25
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
         }
         checkAnswer()
         questionNumber += 1
-  
+        
     }
     
     @IBAction func exitGame(_ sender: Any) {
@@ -49,21 +50,23 @@ class ViewController: UIViewController {
         })
         alert.addAction(restartAction)
         present(alert,     animated: true, completion: nil)
-    } 
+    }
     
     func updateUI()
     {
+        
         scoreLabel.text = "Score: \(score)"
         progressLabel.text = "\(questionNumber + 1)/ \(numberOfQuestions)"
-      
+        
     }
     
-
+    
     func nextQuestion()
     {
-        
+        MusicPlayer(fileSound:"_spiderman-thwip")
+        questionNumber = Int(arc4random()) % numberOfQuestions
         if questionNumber < numberOfQuestions {
-             questionLabel.text = allQuestions.list[questionNumber].QuestionText
+            questionLabel.text = allQuestions.list[questionNumber].QuestionText
             updateUI()
         }
         else  {
@@ -77,7 +80,7 @@ class ViewController: UIViewController {
             alert.addAction(restartAction)
             present(alert, animated: true, completion: nil)
         }
-       
+        
     }
     
     
@@ -90,12 +93,12 @@ class ViewController: UIViewController {
             score += 1
             displayCorrectAnswer(displayAnswer:"Correct: You got 1 Point")
         }
-        //--- Medium
+            //--- Medium
         else if answerResponse == pickedAnswer && difficultyLevel == "Medium" {
             score += 3
             displayCorrectAnswer(displayAnswer:"Correct: That was kinda tough. You got 3 Points")
         }
-        //--- Hard
+            //--- Hard
         else if answerResponse == pickedAnswer && difficultyLevel == "Hard" {
             score += 5
             displayCorrectAnswer(displayAnswer:"Correct: That was Hard. You got 5 Points")
@@ -109,6 +112,7 @@ class ViewController: UIViewController {
     
     func displayCorrectAnswer(displayAnswer: String)
     {
+        
         print(displayAnswer)
         //------ Display Correct Answer
         
@@ -126,11 +130,25 @@ class ViewController: UIViewController {
     
     func startOver()
     {
-       questionNumber = 0
+        questionNumber = 0
         score = 0
         nextQuestion()
     }
     
-
+    func MusicPlayer(fileSound: String)
+    {
+        guard let url = Bundle.main.url(forResource: "\(fileSound)", withExtension: "wav") else {return}
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            
+            guard let audioPlayer = audioPlayer else {return}
+            
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+            
+        }catch let error{
+            print(error.localizedDescription)
+        }
+    }
     
 }
