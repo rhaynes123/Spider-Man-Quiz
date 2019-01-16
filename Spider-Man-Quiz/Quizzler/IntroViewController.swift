@@ -16,23 +16,19 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
         // Do any additional setup after loading the view.
-        colorButton()
+        
+    }
+    
+    @IBAction func PlayThemeButton(_ sender: Any) {
         MusicPlayer(fileSound: "Spiderman")
     }
     
     @IBAction func MuteButton(_ sender: Any) {
-        MusicStop();
+        audioPlayer?.stop()
     }
-    @IBAction func PlayGameButtonPressed(_ sender: Any) {
-        MusicStop()
-    }
-    func colorButton()
-    {
-        PlayGameButton.backgroundColor = UIColor.white
-        PlayGameButton.layer.cornerRadius = PlayGameButton.frame.height/2
-        PlayGameButton.layer.shadowRadius = 4
-    }
+    
     //This needs to be in a class at this point
     func MusicPlayer(fileSound: String)
     {
@@ -50,10 +46,7 @@ class IntroViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-    func MusicStop()
-    {
-        audioPlayer?.stop()
-    }
+    
 
     /*
     // MARK: - Navigation
