@@ -10,7 +10,9 @@
 import Foundation
 class QuestionBank
 {
+    
     var list = [Question]()
+
     init()
     {
         // Creating a quiz item and appending it to the list
@@ -74,9 +76,10 @@ class QuestionBank
         list.append(Question(text: "Spider-Man's Uncle is named Richard.", answerResponse: false, theCorrectAnswer: "Peter Parker's famous uncle is named Ben.", difficultyLevel: "Easy"))
         //30th Question
         list.append(Question(text: "Spider-Man can talk to actual spiders.", answerResponse: false, theCorrectAnswer: "There was a time when this was true but Spider-Man quickly loss that power.", difficultyLevel: "Easy"))
-        
+        print(list)
         
         
         
     }
+    
 }

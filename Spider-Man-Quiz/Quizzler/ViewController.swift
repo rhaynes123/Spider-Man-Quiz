@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     func nextQuestion()
     {
         MusicPlayer(fileSound:"_spiderman-thwip")
-        questionNumber = Int(arc4random()) % numberOfQuestions
+        //questionNumber = allQuestions.shuffled()
         if questionNumber < numberOfQuestions {
             questionLabel.text = allQuestions.list[questionNumber].QuestionText
             updateUI()
