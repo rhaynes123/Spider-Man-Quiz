@@ -8,7 +8,9 @@
 //
 
 import Foundation
+import SQLite3
 class QuestionBank
+    //TODO Need to add database selects
 {
     
     var list = [Question]()
@@ -37,7 +39,7 @@ class QuestionBank
         //10th Question
         list.append(Question(text: "Spider-Man was an original member of the Avengers.", answerResponse: false, theCorrectAnswer: "Spider-Man did not join the Avengers officially until New Avengers Volume 1 Issue 1 in January 2005. ", difficultyLevel: "Medium"))
         //11th Question
-        list.append(Question(text: "Spider-Man once had 8 arms.", answerResponse: false, theCorrectAnswer: "Spider-Man once had 6 arms. ", difficultyLevel: "Medium"))
+        list.append(Question(text: "Spider-Man once had 8 arms.", answerResponse: false, theCorrectAnswer: "Spider-Man once had 6 arms.", difficultyLevel: "Medium"))
         //12th Question
         list.append(Question(text: "Michael Morbius is a real Vampire.", answerResponse: false, theCorrectAnswer: "Morbius is a mutate but not a true supernatural vampire. ", difficultyLevel: "Medium"))
         //13th Question
@@ -65,7 +67,7 @@ class QuestionBank
         //24th Question
         list.append(Question(text: "Green Goblin originally rode a rocket Broom Stick.", answerResponse: true, theCorrectAnswer: "Green Goblin debuyed riding of rocket Broom Stick.", difficultyLevel: "Hard"))
         //25th Question
-        list.append(Question(text: "Peter Parker spent time working as a high school Science Teacher.", answerResponse: true, theCorrectAnswer: "During the mi 2000s Spider-Man taught science at Mid-Town High.", difficultyLevel: "Hard"))
+        list.append(Question(text: "Peter Parker spent time working as a high school Science Teacher.", answerResponse: true, theCorrectAnswer: "During the mid 2000s Spider-Man taught science at Mid-Town High.", difficultyLevel: "Hard"))
         //26th Question
         list.append(Question(text: "Spider-Man worked as a photographer for the Daily Planet.", answerResponse: false, theCorrectAnswer: "He worked at the Daily Bugle.", difficultyLevel: "Easy"))
         //27th Question

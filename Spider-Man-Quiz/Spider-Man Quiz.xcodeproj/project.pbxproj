@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553C4127220925DF001F6B0C /* hero_db_creation.sql in Resources */ = {isa = PBXBuildFile; fileRef = 553C4126220925DE001F6B0C /* hero_db_creation.sql */; };
 		5569F69E21AA1ED100F45C0C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69D21AA1ED100F45C0C /* Question.swift */; };
 		5569F6A021AA24FF00F45C0C /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69F21AA24FF00F45C0C /* QuestionBank.swift */; };
 		55F6D26121D972DC00FDB789 /* _spiderman-thwip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		553C4126220925DE001F6B0C /* hero_db_creation.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_db_creation.sql; sourceTree = "<group>"; };
 		5569F69D21AA1ED100F45C0C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5569F69F21AA24FF00F45C0C /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "_spiderman-thwip.wav"; path = "../../../../../../Downloads/_spiderman-thwip.wav"; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553C412522092522001F6B0C /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				553C4126220925DE001F6B0C /* hero_db_creation.sql */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
 		55F6D25F21D9720800FDB789 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				553C412522092522001F6B0C /* SQL */,
 				55F6D25F21D9720800FDB789 /* Sounds */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
@@ -182,6 +193,7 @@
 				55F6D26121D972DC00FDB789 /* _spiderman-thwip.wav in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
+				553C4127220925DF001F6B0C /* hero_db_creation.sql in Resources */,
 				55F6D27F21EC078900FDB789 /* Spiderman.wav in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
 			);
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -319,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -372,7 +384,7 @@
 				633646D71B8C657400FF45E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		633646D81B8C657400FF45E2 /* Build configuration list for PBXNativeTarget "Spider-Man Quiz" */ = {
 			isa = XCConfigurationList;
@@ -381,7 +393,7 @@
 				633646DA1B8C657400FF45E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
