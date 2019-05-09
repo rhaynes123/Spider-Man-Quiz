@@ -27,6 +27,7 @@ class QuestionBank
         //4th Question
         list.append(Question(text: "Mile Morales is half African American half Caucasian.", answerResponse: false, theCorrectAnswer: "Miles Morales is half African American half Pureto Rican.", difficultyLevel: "Hard"))
         //5th Question
+        ///*
         list.append(Question(text: "Spider-Woman(Jessica Drew) can shoot Venom Blasts.", answerResponse: true, theCorrectAnswer: "Spider-Woman can shoot bio-electric Venom Blasts.", difficultyLevel: "Easy"))
         //6th Question
         list.append(Question(text: "Miguel O'Hara is the Spider-Man from 2099.", answerResponse: true, theCorrectAnswer: "Miguel O'Hara is indeed Spider-Man 2099.", difficultyLevel: "Medium"))
@@ -78,7 +79,8 @@ class QuestionBank
         list.append(Question(text: "Spider-Man's Uncle is named Richard.", answerResponse: false, theCorrectAnswer: "Peter Parker's famous uncle is named Ben.", difficultyLevel: "Easy"))
         //30th Question
         list.append(Question(text: "Spider-Man can talk to actual spiders.", answerResponse: false, theCorrectAnswer: "There was a time when this was true but Spider-Man quickly loss that power.", difficultyLevel: "Easy"))
-        print(list)
+        //*/
+        list.shuffle()
         
         
         

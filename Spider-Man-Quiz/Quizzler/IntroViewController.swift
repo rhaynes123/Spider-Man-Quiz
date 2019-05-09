@@ -22,7 +22,7 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func PlayThemeButton(_ sender: Any) {
-        MusicPlayer(fileSound: "Spiderman")
+        MusicPlayer(fileSound: "_spiderman-thwip")
     }
     
     @IBAction func MuteButton(_ sender: Any) {

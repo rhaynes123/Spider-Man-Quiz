@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var pickedAnswer : Bool = false
     var questionNumber : Int = 0
     var score: Int = 0
+    
     lazy var numberOfQuestions: Int = allQuestions.list.count
     var audioPlayer: AVAudioPlayer?
     

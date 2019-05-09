@@ -10,9 +10,8 @@
 		553C4127220925DF001F6B0C /* hero_db_creation.sql in Resources */ = {isa = PBXBuildFile; fileRef = 553C4126220925DE001F6B0C /* hero_db_creation.sql */; };
 		5569F69E21AA1ED100F45C0C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69D21AA1ED100F45C0C /* Question.swift */; };
 		5569F6A021AA24FF00F45C0C /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69F21AA24FF00F45C0C /* QuestionBank.swift */; };
-		55F6D26121D972DC00FDB789 /* _spiderman-thwip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */; };
+		559E07332283B5B400DBBF78 /* _spiderman-thwip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 559E07322283B5B300DBBF78 /* _spiderman-thwip.wav */; };
 		55F6D27D21EBE0B800FDB789 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */; };
-		55F6D27F21EC078900FDB789 /* Spiderman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F6D27E21EC078800FDB789 /* Spiderman.wav */; };
 		633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646BE1B8C657400FF45E2 /* AppDelegate.swift */; };
 		633646C11B8C657400FF45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646C01B8C657400FF45E2 /* ViewController.swift */; };
 		633646C61B8C657400FF45E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633646C51B8C657400FF45E2 /* Images.xcassets */; };
@@ -24,9 +23,8 @@
 		553C4126220925DE001F6B0C /* hero_db_creation.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_db_creation.sql; sourceTree = "<group>"; };
 		5569F69D21AA1ED100F45C0C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5569F69F21AA24FF00F45C0C /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
-		55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "_spiderman-thwip.wav"; path = "../../../../../../Downloads/_spiderman-thwip.wav"; sourceTree = "<group>"; };
+		559E07322283B5B300DBBF78 /* _spiderman-thwip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "_spiderman-thwip.wav"; sourceTree = "<group>"; };
 		55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		55F6D27E21EC078800FDB789 /* Spiderman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Spiderman.wav; path = ../../../../../../Downloads/Spiderman.wav; sourceTree = "<group>"; };
 		633646B91B8C657400FF45E2 /* Spider-Man Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spider-Man Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633646BD1B8C657400FF45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633646BE1B8C657400FF45E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +56,7 @@
 		55F6D25F21D9720800FDB789 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				55F6D27E21EC078800FDB789 /* Spiderman.wav */,
-				55F6D26021D972DC00FDB789 /* _spiderman-thwip.wav */,
+				559E07322283B5B300DBBF78 /* _spiderman-thwip.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -157,19 +154,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "London App Brewery";
 				TargetAttributes = {
 					633646B81B8C657400FF45E2 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = P7FYQ2HW53;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = 633646B41B8C657400FF45E2 /* Build configuration list for PBXProject "Spider-Man Quiz" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -190,11 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F6D26121D972DC00FDB789 /* _spiderman-thwip.wav in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
 				553C4127220925DF001F6B0C /* hero_db_creation.sql in Resources */,
-				55F6D27F21EC078900FDB789 /* Spiderman.wav in Resources */,
+				559E07332283B5B400DBBF78 /* _spiderman-thwip.wav in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -295,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -352,8 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -369,8 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.richqualitydevelopment.SpiderManQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
