@@ -11,6 +11,7 @@
 		5569F69E21AA1ED100F45C0C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69D21AA1ED100F45C0C /* Question.swift */; };
 		5569F6A021AA24FF00F45C0C /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569F69F21AA24FF00F45C0C /* QuestionBank.swift */; };
 		559E07332283B5B400DBBF78 /* _spiderman-thwip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 559E07322283B5B300DBBF78 /* _spiderman-thwip.wav */; };
+		55DD90A922A454E000590BD1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DD90A822A454E000590BD1 /* libsqlite3.tbd */; };
 		55F6D27D21EBE0B800FDB789 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */; };
 		633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646BE1B8C657400FF45E2 /* AppDelegate.swift */; };
 		633646C11B8C657400FF45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646C01B8C657400FF45E2 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		5569F69D21AA1ED100F45C0C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5569F69F21AA24FF00F45C0C /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		559E07322283B5B300DBBF78 /* _spiderman-thwip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "_spiderman-thwip.wav"; sourceTree = "<group>"; };
+		55DD90A822A454E000590BD1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		55F6D27C21EBE0B800FDB789 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		633646B91B8C657400FF45E2 /* Spider-Man Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spider-Man Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633646BD1B8C657400FF45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DD90A922A454E000590BD1 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,14 @@
 				553C4126220925DE001F6B0C /* hero_db_creation.sql */,
 			);
 			path = SQL;
+			sourceTree = "<group>";
+		};
+		55DD90A722A454E000590BD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55DD90A822A454E000590BD1 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		55F6D25F21D9720800FDB789 /* Sounds */ = {
@@ -66,6 +77,7 @@
 			children = (
 				633646BB1B8C657400FF45E2 /* Quizzler */,
 				633646BA1B8C657400FF45E2 /* Products */,
+				55DD90A722A454E000590BD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

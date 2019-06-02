@@ -12,9 +12,10 @@ class ViewController: UIViewController {
     //Place your instance variables here
     
     let allQuestions = QuestionBank()
-    var pickedAnswer : Bool = false
-    var questionNumber : Int = 0
-    var score: Int = 0
+    var pickedAnswer = false
+    var questionNumber = 0
+    var totalScore = 100
+    var score = 0
     
     lazy var numberOfQuestions: Int = allQuestions.list.count
     var audioPlayer: AVAudioPlayer?
@@ -72,7 +73,7 @@ class ViewController: UIViewController {
         }
         else  {
             
-            let alert = UIAlertController(title: "You've Finished", message: "Total Score: \(score)", preferredStyle: .alert)
+            let alert = UIAlertController(title: "You've Finished", message: "Total Score: \(score)|\(totalScore)", preferredStyle: .alert)
             
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler:
             { (UIAlertAction) in
@@ -107,6 +108,7 @@ class ViewController: UIViewController {
             //--- Wrong
         else {
             displayCorrectAnswer(displayAnswer:"Wrong!")
+            
         }
         
     }
@@ -134,6 +136,8 @@ class ViewController: UIViewController {
         questionNumber = 0
         score = 0
         nextQuestion()
+        allQuestions.list.removeAll()//TODO this maybe redundant since I'm also remvoing all in the QuestionBank file as well.
+        
     }
     
     func MusicPlayer(fileSound: String)

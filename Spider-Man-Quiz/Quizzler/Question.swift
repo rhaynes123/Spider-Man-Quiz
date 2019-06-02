@@ -14,7 +14,7 @@ class Question
     let correctAnswer : String
     let difficulty : String//Maybe should be an enum?
     
-    init(text: String, answerResponse: Bool, theCorrectAnswer: String, difficultyLevel: String) {
+    init(Id: Int, text: String, answerResponse: Bool, theCorrectAnswer: String, difficultyLevel: String) {
         QuestionText = text
         answer = answerResponse
         correctAnswer = theCorrectAnswer

@@ -25,9 +25,7 @@ class IntroViewController: UIViewController {
         MusicPlayer(fileSound: "_spiderman-thwip")
     }
     
-    @IBAction func MuteButton(_ sender: Any) {
-        audioPlayer?.stop()
-    }
+    
     
     //This needs to be in a class at this point
     func MusicPlayer(fileSound: String)
